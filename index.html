@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GQ's Coding Notes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class = "container">
+		<h1><center>Syntax/Logic Notes for Programming Languages</h1>
+		<blockquote>
+			"You aren’t going to find anybody that’s going to be <i>successful</i> without making a <b> sacrifice </b> and without <b> perseverance </b>.”
+			<footer>
+				Lou Holtz
+			</footer>
+		</blockquote>
+		<p> Enjoy these notes written by <mark>Gordon Quach</mark>. </p>
+		<div class = "row">
+			<div class="col-md-12" style="background-color: #87CEEB"><center>Python</div>
+		</div>
+		<dl>
+			<dt>Commenting</dt>
+				<dd>-To comment, you would just use a #.</dd>
+				<dd>-Here's an example!<dd>
+				<br/>
+					<pre>
+						# I am going to teach you on how to code in Python!
+					</pre>
+			<hr/>
+			<dt>Creating Methods</dt>
+				<dd>- To create a method, one would just type <code>def</code> and the name you want to assign your method.</dd>
+				<dd>- You can also call functions within a method, such as <code>print</code>. </dd> 
+				<dd>- When creating other methods, you can create "helper methods" and call them within a method.</dd>
+				<dd>- Don't forget about the colon at the end of each method/if and else statements!
+				<dd>- Here's an example! </dd>
+				<br/>
+					<pre>
+						def update():
+						   for a in range(1,101):
+							  if ((a % 3 == 0) and (a % 5 == 0)):
+								 print ("fizz and buzz")
+							  elif (a % 3 == 0):
+								 print ("fizz")
+							  elif (a % 5 == 0):
+								 print ("buzz")
+							  else:
+								 print a 
+						  
+						update()   
+					</pre>
+			<hr/>
+			<dt>True or False?</dt>
+				<dd>-Booleans can be set to true or false. You would use comparators to set comparators to given values.
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Comparator</th>
+							<th>True</th>
+							<th>False</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td># Equal to (==)</td>
+							<td>5==5</td>
+							<td>5==6</td>
+						</tr>
+						<tr>
+							<td># Not equal to (!=)</td>
+							<td>(20/20) != 2</td>
+							<td>(30**5) != 24300000</td>
+						</tr>
+						<tr>
+							<td># Less than (<)</td>
+							<td>5 < 6</td>
+							<td>80*30 < 5</td>
+						</tr>
+						<tr>
+							<td># Less than or equal to (<=)</td>
+							<td>80*308000 < (80*308000+80*50)</td>
+							<td>80*308000 < 5</td>
+						</tr>
+						<tr>
+							<td># Greater than (>)</td>
+							<td>(888**9 + 50) > 4</td>
+							<td>999999999 > 10000000000000</td>
+						</tr>
+						<tr>
+							<td># Greater than or equal to (>=)</td>
+							<td>7**2 >= 49</td>
+							<td>50 >= 100</td>
+						</tr>
+					</tbody>
+				</table>
+				<dd>-Here's an example of comparators within a method!
+				<br/>
+				<br/>
+					<pre>
+						def TestingComparators():
+							print ((20/20) != 2) #True
+							print (7**2 >= 49) #True
+							print (30 == 50) #False
+							print (80*30 < 5) #False
+
+						TestingComparators()
+					</pre>
+			<hr/>
+			<dt>For Loops</dt>
+				<dd>-You set an element (such as variable n) after the <code>for</code> in a <code>range</code>.</dd>
+				<dd>-Now, the range be set to a max (101), exclusively (1,101) [which would only do 100 terms], and increments (1, 101, 2). 
+				This means that it will start at 1, end at 100, and increase by 2. Therefore, there would only be 50 counts.</dd>
+				<dd>-After you intialize the for loop, you can initialize a boolean, such as an <code>if statement</code> to run a counter.
+				Every time the assertion is true within the boolean, the function will occur.
+				<dd>-Here's an example! </dd>
+				<br/>
+					<pre>
+						for n in range(101):
+							if(n % 4 is 0):
+							print(n)
+					</pre>
+			<hr/>
+		</dl>
+		
+	</div>
+	
+
+
+
+</body>
+</html>
